@@ -1,0 +1,57 @@
+Problem 83 Power BI DAX Measures
+
+Table assumed: FactCyberEvents
+
+Total Incidents =
+DISTINCTCOUNT(FactCyberEvents[incident_id])
+
+Critical Incidents =
+CALCULATE(
+    COUNTROWS(FactCyberEvents),
+    FactCyberEvents[severity] = "Critical"
+)
+
+Average Risk Score =
+AVERAGE(FactCyberEvents[risk_score])
+
+High Risk Assets =
+CALCULATE(
+    DISTINCTCOUNT(FactCyberEvents[asset_id]),
+    FactCyberEvents[risk_score] >= 80
+)
+
+Open Vulnerabilities =
+CALCULATE(
+    COUNTROWS(FactCyberEvents),
+    NOT FactCyberEvents[mitigation_status] IN {"Closed", "Completed", "Resolved"}
+)
+
+Mitigation Completion Rate % =
+DIVIDE(
+    CALCULATE(
+        COUNTROWS(FactCyberEvents),
+        FactCyberEvents[mitigation_status] IN {"Closed", "Completed", "Resolved"}
+    ),
+    COUNTROWS(FactCyberEvents)
+) * 100
+
+Average Response Time Hours =
+AVERAGE(FactCyberEvents[response_time_hours])
+
+Average Recovery Time Hours =
+AVERAGE(FactCyberEvents[recovery_time_hours])
+
+Total Downtime Hours =
+SUM(FactCyberEvents[downtime_hours])
+
+Response SLA Breaches =
+CALCULATE(
+    COUNTROWS(FactCyberEvents),
+    FactCyberEvents[response_time_hours] > 24
+)
+
+High Risk Incident Rate % =
+DIVIDE(
+    CALCULATE(COUNTROWS(FactCyberEvents), FactCyberEvents[risk_score] >= 80),
+    COUNTROWS(FactCyberEvents)
+) * 100

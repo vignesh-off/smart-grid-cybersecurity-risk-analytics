@@ -1,0 +1,25 @@
+incident_id,asset_id,asset_type,region,grid_zone,incident_date,threat_type,attack_vector,severity,risk_score,response_time_hours,recovery_time_hours,downtime_hours,mitigation_status,closure_date,estimated_loss,control_type,anomaly_flag,anomaly_reason
+INC001,AST001,Substation,North,Zone A,2025-01-05,Malware,Remote Access,High,78,6,18,5,Closed,2025-01-06,150000,Endpoint Protection,False,
+INC002,AST002,Smart Meter,South,Zone B,2025-01-12,Phishing,Email,Medium,55,9,20,2,Resolved,2025-01-13,40000,Awareness Training,False,
+INC003,AST003,Control Center,West,Zone C,2025-02-03,Ransomware,VPN,Critical,94,15,48,18,In Progress,,800000,Network Segmentation,True,High risk score; Repeated incidents for asset; 
+INC004,AST004,Transformer,East,Zone D,2025-02-14,DDoS,Public Network,High,82,5,15,8,Closed,2025-02-15,220000,Firewall Upgrade,True,High risk score; 
+INC005,AST001,Substation,North,Zone A,2025-03-02,Malware,USB Device,Critical,91,12,36,16,Open,,650000,Endpoint Protection,True,High risk score; 
+INC006,AST005,SCADA Server,Central,Zone E,2025-03-11,Unauthorized Access,Weak Password,High,87,10,30,10,In Progress,,300000,IAM Hardening,True,High risk score; 
+INC007,AST006,Distribution Feeder,South,Zone B,2025-04-07,Insider Threat,Privileged Account,Medium,63,7,16,4,Closed,2025-04-08,75000,Access Review,False,
+INC008,AST003,Control Center,West,Zone C,2025-04-18,Ransomware,VPN,Critical,96,20,60,24,Open,,950000,Network Segmentation,True,High risk score; Repeated incidents for asset; 
+INC009,AST007,Smart Meter,North,Zone A,2025-05-04,Data Tampering,API,High,80,8,22,7,Resolved,2025-05-05,120000,API Security,True,High risk score; 
+INC010,AST008,Substation,East,Zone D,2025-05-21,DDoS,Public Network,Medium,58,4,12,3,Closed,2025-05-22,35000,Firewall Upgrade,False,
+INC011,AST005,SCADA Server,Central,Zone E,2025-06-09,Unauthorized Access,Weak Password,Critical,90,14,42,14,In Progress,,550000,IAM Hardening,True,High risk score; 
+INC012,AST009,Transformer,West,Zone C,2025-06-24,Malware,Remote Access,High,76,6,20,6,Closed,2025-06-25,175000,Endpoint Protection,False,
+INC013,AST010,Control Center,North,Zone A,2025-07-08,Phishing,Email,Medium,49,5,10,1,Resolved,2025-07-08,25000,Awareness Training,False,
+INC014,AST003,Control Center,West,Zone C,2025-07-19,Ransomware,VPN,Critical,98,22,72,30,Open,,1200000,Network Segmentation,True,High risk score; Unusual response time; Repeated incidents for asset; 
+INC015,AST011,SCADA Server,South,Zone B,2025-08-06,Data Exfiltration,Compromised Credential,High,85,11,34,11,In Progress,,410000,DLP Monitoring,True,High risk score; 
+INC016,AST012,Smart Meter,Central,Zone E,2025-08-23,Data Tampering,API,Low,35,3,8,1,Closed,2025-08-23,9000,API Security,False,
+INC017,AST001,Substation,North,Zone A,2025-09-05,Malware,Remote Access,High,83,9,28,9,Closed,2025-09-06,260000,Endpoint Protection,True,High risk score; 
+INC018,AST013,Distribution Feeder,East,Zone D,2025-09-17,DDoS,Public Network,Medium,60,6,18,5,Resolved,2025-09-18,60000,Firewall Upgrade,False,
+INC019,AST005,SCADA Server,Central,Zone E,2025-10-03,Unauthorized Access,Weak Password,Critical,92,16,50,20,Open,,700000,IAM Hardening,True,High risk score; 
+INC020,AST014,Transformer,West,Zone C,2025-10-20,Insider Threat,Privileged Account,High,79,8,24,8,In Progress,,190000,Access Review,False,
+INC021,AST015,Smart Meter,North,Zone A,2025-11-10,Phishing,Email,Low,42,4,9,1,Closed,2025-11-10,12000,Awareness Training,False,
+INC022,AST016,Substation,South,Zone B,2025-11-26,Malware,USB Device,High,81,10,32,10,Resolved,2025-11-27,280000,Endpoint Protection,True,High risk score; 
+INC023,AST003,Control Center,West,Zone C,2025-12-05,Ransomware,VPN,Critical,97,24,80,36,Open,,1400000,Network Segmentation,True,High risk score; Unusual response time; Repeated incidents for asset; 
+INC024,AST017,SCADA Server,East,Zone D,2025-12-18,Data Exfiltration,Compromised Credential,High,86,12,38,12,In Progress,,470000,DLP Monitoring,True,High risk score; 
