@@ -1,0 +1,29 @@
+# Python / cache
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Database / local files
+*.db
+*.sqlite
+*.sqlite3
+.env
+*.log
+
+# Node / frontend
+node_modules/
+dist/
+build/
+
+# Power BI temp files
+~$*
+
+# OS / IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
